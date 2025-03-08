@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Repository | PR Summarizer</title>
+    <!-- Adding Font Awesome for the GitHub icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fff;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #2c3e50, #3498db);
+            color: white;
+            padding: 100px 0 50px 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        section {
+            padding: 60px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        section:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 30px;
+            color: #2c3e50;
+            position: relative;
+            display: inline-block;
+        }
+
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background-color: #3498db;
+        }
+
+        .content-wrapper {
+            margin: 20px 0;
+        }
+
+        .item {
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: white;
+            border-left: 4px solid #3498db;
+            transition: transform 0.3s ease;
+        }
+
+        .item:hover {
+            transform: translateX(10px);
+        }
+
+        .item-title {
+            font-size: 1.2rem;
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .item-content {
+            color: #666;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+        }
+
+        .github-link {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+        }
+
+        .github-link:hover {
+            color: #3498db;
+        }
+
+        .github-link i {
+            margin-right: 8px;
+            font-size: 1.2rem;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            section {
+                padding: 40px 0;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <div class="container">
+            <h1>Test Repository | PR Summarizer</h1>
+        </div>
+    </div>
+
+    <div class="container">
+        <section>
+            <h2>Pull Requests</h2>
+            <div class="content-wrapper">
+                <div class="item">
+                    <div class="item-title">PR #1: PR 1 Title</div>
+                    <div class="item-content">PR 1 Body</div>
+                </div>
+                <div class="item">
+                    <div class="item-title">PR #2: PR 2 Title</div>
+                    <div class="item-content">PR 2 Body</div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Comments</h2>
+            <div class="content-wrapper">
+                <div class="item">Comment 1</div>
+                <div class="item">Comment 2</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Issues</h2>
+            <div class="content-wrapper">
+                <div class="item">Issue 1</div>
+                <div class="item">Issue 2</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Commits</h2>
+            <div class="content-wrapper">
+                <div class="item">Commit 1</div>
+                <div class="item">Commit 2</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Files</h2>
+            <div class="content-wrapper">
+                <div class="item">File 1</div>
+                <div class="item">File 2</div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <a href="https://github.com/bansikah22" class="github-link">
+            <i class="fab fa-github"></i>@bansikah22
+        </a>
+    </footer>
+</body>
+</html>
